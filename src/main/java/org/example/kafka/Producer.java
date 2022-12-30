@@ -8,14 +8,16 @@ import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.io.ByteArrayOutputStream;
 import java.io.ObjectOutputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Scanner;
 
 public class Producer {
-    public void producerMethod(Map<Integer, String> maps) {
+    public void producerMethod() {
             // 루프 빠져나갈 행동
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            try(ObjectOutputStream oos = new ObjectOutputStream(baos)) {
+            try {
+                Scanner sc = new Scanner(System.in);
                 // 카프카 프로듀서 설정
                 Properties producerConfig = new Properties();
                 producerConfig.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
@@ -26,10 +28,8 @@ public class Producer {
                 final String TOPIC = "stream-test";
 
                 // 보낼 데이터
-
-                oos.writeObject(maps);
-                byte[] value = baos.toByteArray();
-                System.out.println(value);
+                String data = sc.nextLine();
+                byte[] value = data.getBytes(StandardCharsets.UTF_8);
 
                 // 암호화
                 //byte[] encoded = Base64.getEncoder().encode(value);
