@@ -1,44 +1,33 @@
 package org.example;
 
-import com.opencsv.CSVParser;
-import com.opencsv.CSVParserBuilder;
-import com.opencsv.CSVReader;
-import com.opencsv.CSVReaderBuilder;
-import com.opencsv.bean.CsvToBeanBuilder;
 import org.example.kafka.Consumer;
 import org.example.kafka.Producer;
 import org.example.stream.Column;
-import org.example.stream.SplitMethod;
-import org.example.stream.SplitMethodTest;
+import org.example.stream.MakeColumnList;
+import org.example.stream.ListToMap;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Producer kafkaProducer = new Producer();
         Consumer kafkaConsumer = new Consumer();
+        ListToMap listToMap = new ListToMap();
+        MakeColumnList makeColumnList = new MakeColumnList();
+
+        // Column클래스에 맞춰 columnList 생성
+        List<Column> columnList = makeColumnList.MakeColumnList();
+
+        // Producer메서드로 데이터 전송
         kafkaProducer.producerMethod();
+
+        // 컨슈머로 받은 데이터를 splitMethod를 통해 파싱하여 리스트에 저장
         List<String> lists = kafkaConsumer.consumerMethod();
-//        lists.stream().forEach(System.out::println);
-//        File csvFile = new File("C:\\Users\\User\\Desktop\\CSVconfig.csv");
-//        Scanner sc = new Scanner(System.in);
-//        String line = "";
-//
-//        try {
-//            List<Column> columns = new CsvToBeanBuilder(new FileReader(csvFile))
-//                    .withSeparator(';')
-//                    .withType(Column.class)
-//                    .build()
-//                    .parse();
-//            columns.forEach(System.out::println);
-//        } catch (FileNotFoundException e) {
-//            throw new RuntimeException(e);
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
+        System.out.println(lists);
+
+        // 맵으로 저장
+
+
+
     }
 }

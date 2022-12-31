@@ -13,5 +13,6 @@ import java.util.stream.Stream;
 
 public class ListToMap {
     public void ListToMapMethod(List<String> lists){
+
     }
 }

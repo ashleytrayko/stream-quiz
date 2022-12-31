@@ -35,7 +35,7 @@ public class Producer {
                 //byte[] encoded = Base64.getEncoder().encode(value);
 
                 // 설정한 내용으로 카프카 프로듀서 객체 생성
-                KafkaProducer<String, byte[]> kafkaProducer = new KafkaProducer<String, byte[]>(producerConfig);
+                KafkaProducer<String, byte[]> kafkaProducer = new KafkaProducer<>(producerConfig);
                 
                 // 프로듀서 레코드 객체 생성
                 ProducerRecord<String, byte[]> record = new ProducerRecord<>(TOPIC, value);
