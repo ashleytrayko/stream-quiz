@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7c39f21-dbe0-4381-aa1d-9f1650119b5d" name="변경" comment="22-12-27 23:44&#10;&#10;kafka 틀 작성">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/stream/MakeColumnList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="e7c39f21-dbe0-4381-aa1d-9f1650119b5d" name="변경" comment="23-01-01 01:06">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kafka/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kafka/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kafka/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kafka/Producer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/stream/ListToMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/stream/ListToMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/stream/SplitMethodTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +86,9 @@
       <workItem from="1672272444073" duration="634000" />
       <workItem from="1672276166279" duration="9619000" />
       <workItem from="1672292510595" duration="7662000" />
+      <workItem from="1672502787270" duration="65000" />
+      <workItem from="1672539104046" duration="3974000" />
+      <workItem from="1672581348735" duration="4529000" />
     </task>
     <task id="LOCAL-00001" summary="22-12-28 16:53 &#10;&#10;메서드 작성">
       <created>1672214020115</created>
@@ -99,15 +97,34 @@
       <option name="project" value="LOCAL" />
       <updated>1672214020115</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="23-01-01 01:06">
+      <created>1672502839206</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672502839206</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="22-12-28 16:53 &#10;&#10;메서드 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="22-12-28 16:53 &#10;&#10;메서드 작성" />
+    <MESSAGE value="23-01-01 01:06" />
+    <option name="LAST_COMMIT_MESSAGE" value="23-01-01 01:06" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

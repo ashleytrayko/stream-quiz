@@ -23,10 +23,12 @@ public class Main {
 
         // 컨슈머로 받은 데이터를 splitMethod를 통해 파싱하여 리스트에 저장
         List<String> lists = kafkaConsumer.consumerMethod();
-        System.out.println(lists);
+
+        System.out.println("ColumnList : "+columnList);
+        System.out.println("Kafka로 전송되어 파싱된 데이터 : " + lists);
 
         // 맵으로 저장
-
+        listToMap.ListToMapMethod(columnList, lists);
 
 
     }
