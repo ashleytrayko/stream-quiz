@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SplitMethod {
-    public List<String> SplitAlgotithm(String input) {
+    public List<String> SplitAlgorithm(String input) {
         String txt = input;
         while (!txt.equals("kill")) {
             List<String> lists = new ArrayList<>();

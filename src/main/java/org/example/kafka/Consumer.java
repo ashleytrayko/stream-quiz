@@ -47,7 +47,9 @@ public class Consumer {
                 loadedByte = new byte[record.value().length];
                 loadedByte = record.value();
                 String data = new String(loadedByte, StandardCharsets.UTF_8);
-                lists = splitMethod.SplitAlgotithm(data);
+                
+                // 데이터 파싱하여 리스트로 저장
+                lists = splitMethod.SplitAlgorithm(data);
             }
 
             // 복호화?

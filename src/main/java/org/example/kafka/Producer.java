@@ -31,7 +31,7 @@ public class Producer {
                 String data = sc.nextLine();
                 byte[] value = data.getBytes(StandardCharsets.UTF_8);
 
-                // 암호화
+                // Base64 인코딩
                 //byte[] encoded = Base64.getEncoder().encode(value);
 
                 // 설정한 내용으로 카프카 프로듀서 객체 생성
